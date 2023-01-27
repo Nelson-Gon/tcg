@@ -1,5 +1,5 @@
 def main():
-    from our_project.hello_world import HelloWorld
+    # from hello_world import HelloWorld
     import argparse
 
     args_parser = argparse.ArgumentParser()
@@ -18,16 +18,15 @@ def main():
 
 
     use_arguments = args_parser.parse_args()
-    # Create a HelloWorld object
-    use_object = HelloWorld(use_arguments.text)
+
 
     try:
-        use_object.print_text()
+        pass
     except Exception:
         # TODO: Use specific Exception
         raise
     else:
-        print("Thank you for using our_project, please provide feedback at https://github.com/Nelson-Gon/our_project")
+        print("Thank you for using tcg, please provide feedback at https://github.com/Nelson-Gon/tcg")
 
 
 if __name__=="__main__":
